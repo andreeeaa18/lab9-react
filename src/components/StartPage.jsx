@@ -38,7 +38,7 @@ const StartPage = memo(function StartPage() {
     (e) => {
       e.preventDefault();
       const trimmed = username.trim();
-      if (!trimmed) {
+      if (trimmed === "") {
         setError("Numele de utilizator este obligatoriu!");
         return;
       }
